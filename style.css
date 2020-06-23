@@ -1,0 +1,27 @@
+.box{
+    background-color: lightgray;
+    height: 100px;
+    width: 400px;
+    position: relative;
+}
+div:nth-of-type(1){
+    position: absolute;
+    background: red;
+    height: 50px;
+    width: 50px;
+    transition: 3s left;
+    left: 0;
+}
+div:nth-of-type(2){
+    position: absolute;
+    background: green;
+    height: 50px;
+    width: 50px; 
+    top: 50px;
+    transition: 2s left;
+    transition-delay: 1s;
+    left: 0;
+}
+.box:hover>div{
+    left: 88%;
+}
